@@ -185,7 +185,7 @@ color:#5AECC1;
   }
 }
 
-@media (min-width:992px){
+@media (min-width:768px){
   .foto{
     width:300px;
   }
