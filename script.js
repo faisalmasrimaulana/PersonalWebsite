@@ -16,7 +16,6 @@ function typingHome() {
 
 typingHome();
 charHome.addClass("animationBlinkLine");
-
 // if (i == oneCharHome.length) {
 //   border.addClass("borderNeon");
 // }

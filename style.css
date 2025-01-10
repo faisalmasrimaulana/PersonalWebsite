@@ -64,6 +64,10 @@ nav {
   }
 }
 
+.container{
+  padding-bottom: 72px;
+}
+
 .container2{
   width: 81vw;
   margin: auto;
@@ -105,6 +109,9 @@ nav {
   animation: blink-line 1s step-end infinite;
 }
 
+.home{
+  height: calc(100vh - 72px);
+}
 
 @keyframes blink-line{
   from, to{
@@ -113,6 +120,12 @@ nav {
 
   50%{
     border-color: #5AECC1;
+  }
+}
+
+@media (max-width:576px){
+  .fs{
+    font-size: 1rem;
   }
 }
 
@@ -129,9 +142,8 @@ nav {
     width: 81vw;
   }
 
-  .container{
-    padding-bottom: 72px;
-  }
+
+
 }
 
 
