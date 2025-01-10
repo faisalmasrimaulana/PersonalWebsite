@@ -47,6 +47,15 @@ nav {
   animation: muncul 2s ease-in-out 1;
 }
 
+@keyframes muncul{
+  0%{
+    opacity: 0%;
+  }
+  100%{
+    opacity: 100%;
+  }
+}
+
 @keyframes bigscale{
   0%{
     opacity: 0%;
@@ -62,10 +71,6 @@ nav {
   0%{
     rotate: 360deg;
   }
-}
-
-.container{
-  padding-bottom: 72px;
 }
 
 .container2{
@@ -109,9 +114,6 @@ nav {
   animation: blink-line 1s step-end infinite;
 }
 
-.home{
-  height: calc(100vh - 72px);
-}
 
 @keyframes blink-line{
   from, to{
@@ -127,6 +129,10 @@ nav {
   .fs{
     font-size: 1rem;
   }
+
+  .container{
+    justify-content: center;
+  }
 }
 
 @media (min-width:992px){
@@ -141,9 +147,6 @@ nav {
     margin: auto;
     width: 81vw;
   }
-
-
-
 }
 
 
