@@ -47,6 +47,25 @@ nav {
   animation: muncul 2s ease-in-out 1;
 }
 
+.lambaian{
+  display: inline-block;
+  animation: lambai 1s ease-in-out 2;
+  transform-origin: bottom center;
+  transform: rotate(-5deg);
+}
+
+@keyframes lambai {
+  0% {
+      transform: rotate(-5deg);
+  }
+  50% {
+      transform: rotate(20deg);
+  }
+  100% {
+      transform: rotate(-5deg);
+  }
+}
+
 @keyframes muncul{
   0%{
     opacity: 0%;
