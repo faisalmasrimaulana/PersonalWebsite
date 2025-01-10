@@ -38,6 +38,10 @@ color:#5AECC1;
   animation: bigscale 2s ease 1;
 }
 
+.aboutMe{
+  background-color: #000D40;
+}
+
 .intro{
   color:#5AECC1;
 }
@@ -58,24 +62,29 @@ color:#5AECC1;
   height: 50px;
 }
 
-.aboutContainer{
-  background-color: #000D40;
-  animation: mengecil ease 2s ease-in 2;
-}
-
-@keyframes mengecil{
-  0%{
-    transform: scale(20) ;
-  }
-  100%{
-    transform: scale(200);
-  }
+.svgConnect{
+  width: 35px;
+  height: 35px;
 }
 
 .card{
   background-color: #000D40;
   border: 2px solid #5AECC1;
   color: #F0EDFF;
+}
+
+.aboutMe:hover{
+  background-color: #F0EDFF;
+  color: #000D40;
+  cursor: pointer;
+}
+
+.card:hover{
+  cursor: pointer;
+  background-color: white;
+  color: #000D40;
+  border:none;
+  box-shadow: 25px 15px #000D40;
 }
 
 /* animation */
@@ -96,6 +105,24 @@ color:#5AECC1;
   animation: lambai 1s ease-in-out 2;
   transform-origin: bottom center;
   transform: rotate(-5deg);
+}
+
+.kiri{
+  position:relative;
+  animation: kiri 1s linear;
+}
+
+@keyframes kiri{
+  0%{
+    left: 0;
+    width: 0;
+    opacity: 0;
+  }
+  100%{
+    opacity: 100%;
+    left: 0;
+    width: 100%;
+  }
 }
 
 @keyframes lambai {
@@ -150,6 +177,12 @@ color:#5AECC1;
   .container{
     justify-content: center;
   }
+
+  .about{
+    height: calc(100vh - 72px);
+    margin: auto;
+    width: 81vw;
+  }
 }
 
 @media (min-width:992px){
@@ -159,7 +192,7 @@ color:#5AECC1;
   .teks{
     width: 520px;
   }
-  .home, .about{
+  .home, .about, .project{
     height: calc(100vh - 72px);
     margin: auto;
     width: 81vw;
